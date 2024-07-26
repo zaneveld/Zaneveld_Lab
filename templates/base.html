@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jesse Zaneveld">
+    <meta name="description" content="Zaneveld Lab">
+    <title>Zaneveld Lab</title>
+</head>
+
+<body>
+    <h1><a href="{{ url_for('index') }}">Zaneveld Lab</a></h1>
+
+    <div>
+        {% block content %}
+        <p>Default Content</p> 
+        {% endblock content %}
+    </div>
+</body>
+</html>
