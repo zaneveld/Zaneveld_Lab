@@ -16,5 +16,3 @@ deploy: server.py
 	git commit -m "Rebuilt page"
 	git push origin main 	
 	@echo "Done"
-
-.PHONY	build docs 
