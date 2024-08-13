@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
     <h2>{{ page.title }}</h2>
+    Page specific content below 
+    vvvvvvvvvvvvvvvvvvvvvvvvvvv
     {{ page.html|safe }}
+    Page content above is from 
     -------------------------
+    {{page.path}}
 {% endblock content %}
