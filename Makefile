@@ -1,18 +1,20 @@
 
 #To run, type:
-#make build
+#make deploy
 
 #Note: makefiles requre 'real' tabs not tabs expanded into spaces
 
 
 #To edit:
 #In vim, set expandtab!
-build: server.py
+deploy: server.py
 	@echo "Rebuilding the build/ dir"
 	python server.py build
 	cp -r build/* docs
 	git add ./build/*
 	git add ./docs/*
 	git commit -m "Rebuilt page"
-	
-	@echo "Done" 
+	git push origin main 	
+	@echo "Done"
+
+.PHONY	build docs 
