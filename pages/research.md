@@ -17,3 +17,5 @@ For a quick overview of research, check out Google Scholar
 ### Multivariate cross-species comparisons
 
 ### Time-series modelling
+
+*Rendered from research.md*
