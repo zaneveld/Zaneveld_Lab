@@ -29,9 +29,9 @@ def index():
     print (latest)
     return render_template('index.html', articles=latest[:10])
 
-@app.route('/research/')
-def research():
-    return render_template('page.html', page=page, tag="all")
+#@app.route('/research/')
+#def research():
+#    return render_template('page.html', page=page, tag="all")
 
 
 # URL Routing - Flat Pages
